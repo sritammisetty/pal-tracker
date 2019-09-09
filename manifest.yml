@@ -3,8 +3,9 @@ applications:
    buildpacks:
      - dotnet_core_buildpack
    env:
-     ASPNETCORE_ENVIRONMENT: Development
+     WELCOME_MESSAGE: HellofromCloudFoundry
    health-check-type: none
+   path: src/PalTracker/bin/Release/netcoreapp2.1/publish/
    instances: 1
    memory: 250M
    name: PalTracker1
