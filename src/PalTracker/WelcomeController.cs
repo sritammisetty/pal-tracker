@@ -6,6 +6,6 @@ namespace PalTracker
     {
         [HttpGet]
         
-        public string SayHello() => "Hello";
+        public string SayHello() => "hello";
     }
 }
