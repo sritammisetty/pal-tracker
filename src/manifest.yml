@@ -1,0 +1,13 @@
+applications:
+ -
+   buildpacks:
+     - dotnet_core_buildpack
+   env:
+     ASPNETCORE_ENVIRONMENT: Development
+   health-check-type: none
+   instances: 1
+   memory: 250M
+   name: PalTracker1
+   stack: cflinuxfs3
+   routes:
+    - route: paltracker1.cfapps.io
