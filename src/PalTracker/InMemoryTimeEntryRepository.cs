@@ -26,7 +26,7 @@ namespace PalTracker
 
           public bool Contains(long id)=> _timeEntries.ContainsKey(id);
        
-        public List<TimeEntry> List()=> _timeEntries.Values.ToList();
+         public IEnumerable<TimeEntry> List()=> _timeEntries.Values.ToList();
         
 
         public TimeEntry Update(long id,TimeEntry timeEntry)
@@ -39,5 +39,7 @@ namespace PalTracker
         }
 
          public void Delete(long  id)=>_timeEntries.Remove(id);
+
+       
     }
 }
