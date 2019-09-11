@@ -2,10 +2,10 @@ using System;
 
 namespace PalTracker
 {
-   public struct TimeEntry
+   public class TimeEntry
     {
-        // public TimeEntry(){  
-        // }
+        public TimeEntry(){  
+        }
         public long? Id { get; set; }
         public long ProjectId { get; set; }
         public long UserId { get; set; }
